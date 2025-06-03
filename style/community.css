@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+.black-text {
+  color: black !important;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: "Noto Sans TC", "Arial", sans-serif;
+    background-color: #f8f8f8;
+    color: #0f1624;
+}
+
+/* 導覽列 */
+header {
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #231919;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #231919;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.menu li a:hover {
+    color: #dbb86f;
+}
+
+.menu-background-section {
+    background-image: url('https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.community-hero {
+  background-image: url("../images/community-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.community-hero h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.community-hero p {
+  font-size: 18px;
+  color: #1d1e3d;
+}
+
+.social-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.social-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.social-card {
+  background-color: #dbdbdb;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.social-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.social-card h3 {
+  color: #f0c75e;
+}
+
+.programs {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.program-card {
+  background-color: #dbdbdb;
+  padding: 20px;
+  width: 280px;
+  border-radius: 12px;
+}
+
+.program-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.program-card h3 {
+  margin-top: 10px;
+  color: #f0c75e;
+}
+
+.cta-join {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.join-button {
+  background-color: #f0c75e;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* ==== ANIMATION KEYFRAMES ==== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* ==== ANIMATED SECTIONS ==== */
+.hero-content {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.social-card, .program-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.social-card:nth-child(1) { animation-delay: 0.2s; }
+.social-card:nth-child(2) { animation-delay: 0.4s; }
+.social-card:nth-child(3) { animation-delay: 0.6s; }
+
+.program-card:nth-child(1) { animation-delay: 0.2s; }
+.program-card:nth-child(2) { animation-delay: 0.4s; }
+.program-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* ==== HOVER EFFECTS ==== */
+.social-card:hover,
+.program-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* ==== BUTTON ANIMATION ==== */
+.join-button {
+  background-color: #f0c75e;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.join-button:hover {
+  animation: pulse 0.6s ease-in-out;
+  background-color: #ffe27a;
+}
+

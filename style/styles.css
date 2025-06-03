@@ -1,0 +1,391 @@
+/* 基本設定 */
+* {
+    box-sizing: border-box;
+}
+
+.black-text {
+  color: black !important;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: "Noto Sans TC", "Arial", sans-serif;
+    background-color: #f8f8f8;
+    color: #0f1624;
+}
+
+/* 導覽列 */
+header {
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #231919;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #231919;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.menu li a:hover {
+    color: #dbb86f;
+}
+
+.menu-background-section {
+    background-image: url('https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 新聞區 */
+.news-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.news-section h2 {
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.news-cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.news-card {
+    background-color: white;
+    width: 32%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.news-card img, .news-card video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-info {
+    padding: 1rem;
+}
+
+.news-info .category {
+    color: #b19e66;
+    font-weight: 700;
+    margin-right: 0.6rem;
+}
+
+.news-info .date {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.news-info h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.news-info p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 英雄區 */
+.champion-section {
+    max-width: 1200px;
+    margin: 4rem auto 6rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.champion-text {
+    max-width: 50%;
+}
+
+.champion-text h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.champion-text strong {
+    font-weight: 900;
+}
+
+.champion-text p {
+    margin: 1rem 0 2rem 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.buttons {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-gold {
+    background-color: #b19e66;
+    color: white;
+}
+
+.btn-gold:hover {
+    background-color: #8c7e45;
+}
+
+.btn-blue {
+    background-color: #40b3dc;
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: #1a8ccf;
+}
+
+.roles-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.roles-icons div {
+    text-align: center;
+    color: #8c7e45;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.roles-icons img {
+    width: 40px;
+    margin-bottom: 0.4rem;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.roles-icons div:hover img {
+    filter: grayscale(0);
+}
+
+.champion-img img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* 模式影片區 */
+.mode-video-section {
+    max-width: 1200px;
+    margin: 4rem auto 6rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.mode-select {
+    max-width: 40%;
+}
+
+.mode-select h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.mode-thumbnails {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.mode-thumbnails img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.mode-thumbnails img:hover {
+    border: 2px solid #b19e66;
+    transform: scale(1.05);
+}
+
+.mode-preview video {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.mode-video-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* 響應式設計 */
+@media (max-width: 900px) {
+    .news-cards {
+        flex-direction: column;
+    }
+    .news-card {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .champion-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .champion-text {
+        max-width: 100%;
+    }
+    .roles-icons {
+        justify-content: center;
+    }
+    .champion-img {
+        margin-top: 2rem;
+    }
+    .mode-video-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mode-select {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    .mode-preview video {
+        width: 100%;
+    }
+}
+
+/* champions */
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #0a1428;
+  color: #fff;
+}
+
+.champions-section {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header h3 {
+  color: #9faec2;
+  font-size: 18px;
+}
+
+.section-header h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: #c3d1e6;
+}
+
+.champion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.champion-card {
+  background-color: #020d22;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.champion-card:hover {
+  transform: translateY(-5px);
+}
+
+.champion-card img {
+  width: 100%;
+  display: block;
+}
+
+.champion-name {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0a1428;
+}
+

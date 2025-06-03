@@ -1,0 +1,267 @@
+/* ahri.css - 水藍色主題 */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #231919;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #231919;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.menu li a:hover {
+    color: #dbb86f;
+}
+
+/* 英雄橫幅 */
+.hero-banner {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px;
+}
+
+.hero-info {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-left: 4px solid #95d9ed;
+  max-width: 600px;
+  animation: fadeIn 1s ease;
+}
+
+.hero-info h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #82cfd4;
+}
+
+.hero-info .role {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #a6c2fa;
+}
+/* 區塊樣式 */
+.section {
+  padding: 60px 10%;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+}
+
+.section p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* 技能區 */
+.ability-video-section {
+  background-color: #d6f0ff;
+}
+
+.ability-video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.abilities {
+  flex: 1;
+  min-width: 250px;
+}
+
+.ability-card {
+  background-color: #b3e0ff;
+  border: 2px solid #66c2ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ability-card:hover {
+  background-color: #99d6ff;
+}
+
+.video-player {
+  flex: 2;
+  min-width: 300px;
+}
+
+.video-player video {
+  width: 100%;
+  border: 4px solid #66c2ff;
+  border-radius: 1rem;
+}
+
+/* 皮膚輪播 */
+.skin-carousel-section {
+  background-color: #0f0f11;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skin-carousel-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 0.08em;
+  color: #bb86fc;
+  text-shadow: 0 0 6px #bb86fc99;
+}
+
+/* 輪播主容器 */
+.carousel-container {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #1b1b1b 0%, #2a2a2a 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(124, 57, 216, 0.5);
+  padding: 1.5rem 3rem;
+  overflow: hidden;
+  color: #ddd;
+}
+
+/* 輪播軌道（滑動區域） */
+.carousel-track {
+  display: flex;
+  gap: 1.25rem;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  cursor: grab;
+}
+
+/* 單一造型卡片 */
+.carousel-slide {
+  min-width: 180px;
+  flex-shrink: 0;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(124 57 216 / 0.25);
+  user-select: none;
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-slide:hover {
+  transform: translateY(-6px) scale(1.06);
+  box-shadow: 0 0 25px rgb(124 57 216 / 0.75);
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 180px;          /* 固定高度，跟卡片寬度搭配 */
+  object-fit: cover;      /* 讓圖片等比裁切，填滿整個區域 */
+  object-position: center; /* 圖片位置置中 */
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  box-shadow: inset 0 0 12px #7c39d8cc;
+}
+
+
+.carousel-slide p {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #bbb;
+  letter-spacing: 0.04em;
+}
+
+/* 左右切換按鈕 */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3d83ec;
+  border: none;
+  color: white;
+  font-size: 1.9rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(28, 77, 240, 0.7);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.25s ease;
+  z-index: 100;
+}
+
+.carousel-btn:hover {
+  background-color: #3e99ef;
+  box-shadow: 0 6px 18px rgba(41, 129, 216, 0.9);
+}
+
+.carousel-btn.left {
+  left: 1rem;
+}
+
+.carousel-btn.right {
+  right: 1rem;
+}
+
+/* 響應式 */
+@media (max-width: 640px) {
+  .carousel-container {
+    max-width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .carousel-slide {
+    min-width: 140px;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1.5rem;
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,467 @@
+/* 基本重設與主色系 */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", "Arial", sans-serif;
+  background-color: #0a1428;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h2, h3, h4, p {
+  margin: 0;
+}
+
+/* 導覽列 */
+header {
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #231919;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #231919;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.menu li a:hover {
+    color: #dbb86f;
+}
+
+/* 教學介紹 */
+.guide-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #0a1428;
+}
+.section-header h3 {
+  color: #9faec2;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.section-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #c3d1e6;
+}
+
+.background-divider {
+  background-image: url('../images/background_img.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+/* Section 2：圖片切換區 */
+.guide-section-2 {
+  padding: 60px 20px;
+  background-color: #0f1a30;
+  text-align: center;
+}
+.guide-section-2 h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.guide-section-2 .description {
+  color: #c5d3e8;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.guide-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+.guide-thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.guide-thumbnails img {
+  width: 70px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+.guide-thumbnails img:hover {
+  border: 2px solid #b19e66;
+}
+.guide-main {
+  max-width: 500px;
+  text-align: left;
+}
+.guide-main img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.image-text h4 {
+  font-size: 20px;
+  color: #f9d77e;
+  margin-bottom: 10px;
+}
+.image-text p {
+  font-size: 16px;
+  color: #c3d1e6;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .guide-image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .guide-thumbnails {
+    flex-direction: row;
+  }
+  .guide-thumbnails img {
+    width: 100px;
+  }
+}
+
+#battle-section {
+  background-color: #0f1a30;
+  color: white;
+  padding: 60px 40px;
+}
+
+.battle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; 
+  flex-wrap: wrap;
+}
+
+/* 中間：標題 + 文字 + 小圖 */
+.battle-center {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.battle-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+
+.battle-description {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.battle-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.battle-icons img {
+  width: 70px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.battle-icons img:hover {
+  border: 2px solid #dbb86f;
+}
+
+/* 右側圖片與描述 */
+.battle-right {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+}
+
+.battle-map {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.battle-right-description {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.battle-right-description h3 {
+  color: #ffd700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.battle-right-description p {
+  color: #ccc;
+  font-size: 15px;
+}
+
+.jungle-section {
+  background-color: #0f1a30;
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 左邊區塊：標題、文字與小圖 */
+.jungle-left {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.jungle-left h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+
+.jungle-left p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.jungle-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.jungle-icons img {
+  width: 70px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.jungle-icons img:hover{
+  border: 2px solid #dbb86f;
+}
+
+/* 右邊圖片與描述 */
+.jungle-right {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+}
+
+.jungle-right img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.jungle-right-description {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.jungle-right-description h3 {
+  color: #ffd700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.jungle-right-description p {
+  color: #ccc;
+  font-size: 15px;
+}
+
+.role-section {
+  background-color: #0f1a30;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.role-left {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.role-left h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+
+.role-left p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.role-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 50px;
+}
+
+.role-icons img {
+  width: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.role-icons img:hover {
+  border: 2px solid #dbb86f;
+}
+
+.role-right {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+}
+
+.role-right img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.role-description h3 {
+  color: #ffd700;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.role-description p {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.ability-section {
+  background-color: #0f1a30;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.ability-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.ability-left h2 {
+  font-size: 32px;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.ability-left p {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.ability-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.ability-icons img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.ability-icons img:hover {
+  border: 2px solid #ffd700;
+}
+
+.ability-right {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+}
+
+.ability-right img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.ability-description h3 {
+  font-size: 22px;
+  color: #ffd700;
+  font-style: italic;
+}
+
+.ability-description p {
+  font-size: 15px;
+  color: #ccc;
+}
+

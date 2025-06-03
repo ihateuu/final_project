@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Summoner's Tome</title>
+    <link rel="stylesheet" href="style/styles.css" />
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <div class="site-title">Summoner's Tome</div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="champions.html">Champions</a></li>
+          <li><a href="game_guides.html">Game Guides</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+    <!-- Background image section -->
+    <section class="menu-background-section">
+        <div class="content">
+        </div>
+    </section>
+  </header>
+    <main>
+        <!-- News Section -->
+    <section class="news-section">
+    <h2>Featured News</h2>
+    <div class="news-cards">
+        <article class="news-card">
+        <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/OxJoS-Z4Q78"
+            title="Hall of Legends: Uzi | Trailer"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <div class="news-info">
+            <span class="category">Esports</span><span class="date">2025/5/20</span>
+            <h3 class="black-text">Hall of Legends: Uzi | Trailer</h3>
+            <p>Introducing the newest inductee. Watch the full documentary sponsored by Mercedes-Benz on June 12 (Taiwan time).</p>
+        </div>
+        </article>
+
+        <article class="news-card">
+        <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/xdfVomq3lAc"
+            title="FAKER Becomes First Hall of Legends Inductee"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <div class="news-info">
+            <span class="category">Esports</span><span class="date">2025/5/20</span>
+            <h3 class="black-text">FAKER Becomes First Hall of Legends Inductee</h3>
+            <p>LOL Esports welcomes FAKER to the Hall of Legends.</p>
+        </div>
+        </article>
+
+        <article class="news-card">
+        <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/TGnTv8L_mMc"
+            title="God-Lion Garen - Champion Showcase"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <div class="news-info">
+            <span class="category">Game Update</span><span class="date">2025/5/15</span>
+            <h3 class="black-text">God-Lion Garen - Champion Showcase</h3>
+            <p>King of Kings, God of Gods... The TFT 14.4 update will unleash Garen’s might upon the board.</p>
+        </div>
+        </article>
+    </div>
+    </section>
+
+
+        <!-- Champion Section -->
+        <section class="champion-section">
+            <div class="champion-text">
+                <h2 class="black-text">Choose Your <br /><strong>Champion</strong></h2>
+                <p>Whether you prefer engaging in combat, supporting your team, or adapting to situations, there’s a role for you in the Rift.</p>
+                <div class="buttons">
+                    <a href="champions.html" class="btn btn-gold">Discover More Champions</a>
+                    <a href="game_guides.html" class="btn btn-blue">Play Now</a>
+                </div>
+                <div class="roles-icons">
+                    <div data-role="Assassin"><img src="images/image1.jpg" alt="Assassin" /><p>Assassin</p></div>
+                    <div data-role="Fighter"><img src="images/image2.jpg" alt="Fighter" /><p>Fighter</p></div>
+                    <div data-role="Mage"><img src="images/image3.jpg" alt="Mage" /><p>Mage</p></div>
+                    <div data-role="Marksman"><img src="images/image4.jpg" alt="Marksman" /><p>Marksman</p></div>
+                    <div data-role="Support"><img src="images/image5.jpg" alt="Support" /><p>Support</p></div>
+                    <div data-role="Tank"><img src="images/image6.jpg" alt="Tank" /><p>Tank</p></div>
+                </div>
+            </div>
+            <div class="champion-img">
+                <img src="images/c_image4.jpg"/>
+            </div>
+        </section>
+        
+        <!-- Game Modes Section -->
+        <section class="mode-video-section">
+                <div class="mode-select">
+                    <h2 class="black-text">Multiple Modes<br><strong>Choose Your Style</strong></h2>
+                    <div class="mode-thumbnails">
+                        <img src="images/mode1.jpg" alt="Summoner's Rift" data-video="videos/mode1.mp4">
+                        <img src="images/mode2.jpg" alt="ARAM" data-video="videos/mode2.mp4">
+                        <img src="images/mode3.jpg" alt="Teamfight Tactics" data-video="videos/mode3.mp4">
+                    </div>
+                    <a href="game_guides.html" class="btn btn-gold">Play Now</a>
+                </div>
+
+                <div class="mode-preview">
+                    <video id="modeVideo" controls autoplay muted loop>
+                        <source src="videos/mode1.mp4" type="video/mp4" />
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>

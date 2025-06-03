@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Guides - 傳奇殿堂</title>
+  <link rel="stylesheet" href="style/game_guides.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="site-title">Summoner's Tome</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="champions.html">Champions</a></li>
+        <li><a href="game_guides.html">Game Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 教學介紹 -->
+  <section class="guide-section">
+    <div class="section-header">
+      <h3>WELCOME TO THE RIFT</h3>
+      <h2>LEARN THE BASICS</h2>
+      <p>
+        There’s a lot to learn about League, so we’ll start with the essentials. Explore the guide below to get the rundown on the most popular game mode.
+      </p>
+    </div>
+  </section>
+
+  <section class="background-divider"></section>
+
+  <!-- Section 2：圖片切換區 -->
+  <section class="guide-section-2">
+    <h2><strong>DESTROY THE BASE</strong></h2>
+    <p class="description">
+      The Nexus is the heart of both teams’ bases. Destroy the enemy’s Nexus first to win the game.
+    </p>
+    <div class="guide-image-container">
+      <div class="guide-thumbnails">
+        <img src="images/thumb1.jpg" alt="我方主堡" onclick="changeImage('images/base1.jpg', 'YOUR NEXUS', 'Your Nexus is where minions spawn. Behind your Nexus is the Fountain, where you can quickly replenish health and mana and access the Shop.')" />
+        <img src="images/thumb2.jpg" alt="敵方主堡" onclick="changeImage('images/base2.jpg', 'ENEMY NEXUS', 'Located in the enemy team’s base, the enemy Nexus is just like yours. Destroying the enemy Nexus wins your team the game.')" />
+      </div>
+      <div class="guide-main">
+        <img id="mainImage" src="images/base1.jpg" alt="主圖片區" />
+        <div class="image-text">
+          <h4 id="imageTitle">YOUR NEXUS</h4>
+          <p id="imageDescription">
+            Your Nexus is where minions spawn. Behind your Nexus is the Fountain, where you can quickly replenish health and mana and access the Shop.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3：圖片切換區 -->
+  <section class="section" id="battle-section">
+    <div class="battle-wrapper">
+
+      <!-- 中間文字 + 小圖 -->
+      <div class="battle-center">
+        <h2 class="battle-title">CLEAR THE PATH</h2>
+        <p class="battle-description">
+          Your team needs to clear at least one lane to get to the enemy Nexus. Blocking your path are defense structures called turrets and inhibitors.
+        </p>
+
+        <!-- 小圖排在文字下方 -->
+        <div class="battle-icons">
+          <img src="images/tower.jpg" alt="防禦塔"
+              data-image="images/btower.jpg"
+              data-title="TURRETS"
+              data-description="Turrets deal damage to enemy minions and champions, and provide limited vision from the Fog of War for their team. Attack these structures with minions ahead of you to avoid damage and charge ahead.">
+
+          <img src="images/crystal.jpg" alt="水晶兵營"
+              data-image="images/bcrystal.jpg"
+              data-title="INHIBITORS"
+              data-description="Each Inhibitor is protected by a Turret. When destroyed, super minions will spawn in that lane for several minutes. Afterward, the Inhibitor will respawn and Super Minions will stop spawning.">
+        </div>
+      </div>
+
+      <!-- 右側大圖與說明 -->
+      <div class="battle-right">
+        <img class="battle-map" src="images/btower.jpg" alt="塔圖">
+        <div class="battle-right-description">
+          <h3>TURRETS</h3>
+          <p>Turrets deal damage to enemy minions and champions, and provide limited vision from the Fog of War for their team. Attack these structures with minions ahead of you to avoid damage and charge ahead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="jungle-section">
+    <div class="jungle-left">
+      <h2>TAKE ON THE JUNGLE</h2>
+      <p>
+        In between the lanes is the jungle, where neutral monsters and jungle plants reside. The two most important monsters are Baron Nashor and the Drakes. Killing these units grants unique buffs for your team and can also turn the tide of the game.
+      </p>
+      <div class="jungle-icons">
+        <img src="images/baron-icon.jpg" alt="Baron" data-image="images/baron-map.jpg"
+            data-title="BARON NASHOR"
+            data-description="Baron Nashor is the most powerful monster in the jungle. Killing Baron grants the slayer’s team bonus attack damage, ability power, empowered recall, and greatly increases the power of nearby minions." />
+        <img src="images/dragon-icon.jpg" alt="Dragon" data-image="images/dragon-map.jpg"
+            data-title="DRAKES"
+            data-description="Drakes, or dragons, are powerful monsters that grant unique bonuses depending on the element of the drake your team slays. There are five Elemental Drakes and one Elder Dragon." />
+      </div>
+    </div>
+
+    <div class="jungle-right">
+      <img id="jungleImage" src="images/baron-map.jpg" alt="Jungle Map" />
+      <div class="jungle-right-description">
+        <h3 id="jungleTitle">BARON NASHOR</h3>
+        <p id="jungleDescription">
+          Baron Nashor is the most powerful monster in the jungle. Killing Baron grants the slayer’s team bonus attack damage, ability power, empowered recall, and greatly increases the power of nearby minions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 -->
+  <section class="role-section">
+    <div class="role-left">
+      <h2>CHOOSE YOUR LANE</h2>
+      <p>
+        There are five positions that make up the recommended team comp for the game. Each lane lends itself to certain kinds of champions and roles
+      </p>
+      <div class="role-icons">
+        <img src="images/TOP.jpg" alt="Top Lane" 
+            data-image="images/TOPmap.jpg" 
+            data-title="TOP LANE" 
+            data-description="Champions in top lane are the tough solo fighters of the team. It’s their job to protect their lane and focus on the enemy team’s most powerful members.">
+
+        <img src="images/JUNGLE.jpg" alt="Jungle" 
+            data-image="images/JUNGLEmap.jpg" 
+            data-title="JUNGLE" 
+            data-description="Junglers live for the hunt. Stalking between lanes with stealth and skill, they keep a close eye on the most important neutral monsters and pounce the moment an opponent lets their guard down.">
+
+        <img src="images/MID.jpg" alt="Mid Lane" 
+            data-image="images/MIDmap.jpg" 
+            data-title="MID LANE" 
+            data-description="Mid laners are your high burst damage champions who can do it all—solo and as a team. For them, combat is a dangerous dance where they’re always looking for an opportunity to outplay their opponent.">
+
+        <img src="images/BOT.jpg" alt="Bot Lane" 
+            data-image="images/BOTmap.jpg" 
+            data-title="BOT LANE" 
+            data-description="Bot lane champions are the dynamite of the team. As precious cargo, they need to be protected early on before amassing enough gold and experience to carry the team to victory.">
+
+        <img src="images/SUPPORT.jpg" alt="Support" 
+            data-image="images/SUPPORTmap.jpg" 
+            data-title="SUPPORT" 
+            data-description="Support champions are team guardians. They help keep teammates alive and primarily focus on setting up kills, protecting their teammate in bot lane until they become stronger.">
+      </div>
+    </div>
+
+    <div class="role-right">
+      <img id="roleImage" src="images/topmap.jpg" alt="Role Map">
+      <div class="role-description">
+        <h3 id="roleTitle">TOP LANE</h3>
+        <p id="roleText">Champions in top lane are the tough solo fighters of the team. It’s their job to protect their lane and focus on the enemy team’s most powerful members.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6 -->
+  <section class="ability-section">
+    <div class="ability-left">
+      <h2>UNLOCK YOUR ABILITIES</h2>
+      <p>
+        Champions have five core abilities, two special spells, and up to seven items at a time.
+        Figuring out the optimal ability order, summoner spells, and item build for your champion
+        will help you succeed as a team.
+      </p>
+      <div class="ability-icons">
+        <img src="images/Abilities.jpg" alt="Abilities"
+            data-image="images/CAbilities.jpg"
+            data-title="Abilities"
+            data-description="Most champions have a unique kit made up of five abilities: a Passive, three Basics, and an Ultimate. These abilities are mapped to the Q, W, E, and R keys.">
+
+        <img src="images/Summoner_Spells.jpg" alt="Summoner Spells"
+            data-image="images/CSummoner_Spells.jpg"
+            data-title="Summoner Spells"
+            data-description="Summoner spells are abilities with unique effects that champions can use. They are mapped to the D and F keys. There are many spells, but a few commonly used ones are Flash, Teleport, Smite, and Ignite.">
+
+        <img src="images/Items.jpg" alt="Items"
+            data-image="images/CItems.jpg"
+            data-title="Items"
+            data-description="Items enhance your champion’s performance, like granting faster movement, improved damage, and reduced ability cooldowns. Unlike Trinkets, they require gold to purchase.">
+      </div>
+    </div>
+
+    <div class="ability-right">
+      <img id="abilityImage" src="images/CAbilities.jpg" alt="Ability Preview">
+      <div class="ability-description">
+        <h3 id="abilityTitle">Abilities</h3>
+        <p id="abilityText">Most champions have a unique kit made up of five abilities: a Passive, three Basics, and an Ultimate. These abilities are mapped to the Q, W, E, and R keys.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script/game_guides.js"></script>
+</body>
+</html>

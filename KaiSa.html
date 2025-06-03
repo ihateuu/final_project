@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kai'Sa - Summoner's Tome</title>
+  <link rel="stylesheet" href="style/KaiSa.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="site-title">Summoner's Tome</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="champions.html">Champions</a></li>
+        <li><a href="game_guides.html">Game Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="hero-banner">
+    <div class="hero-info">
+      <h1>Kai'Sa</h1>
+      <p class="role">Daughter of the Void — Marksman / Assassin</p>
+      <p>She traverses the Void, surviving from the depths. Kai'Sa is a deadly and elegant warrior, combining the Void and humanity, fighting to survive and striking back to avoid being consumed.</p>
+    </div>
+  </div>
+
+  <!-- Background Story -->
+  <section class="section">
+    <h2>Background Story</h2>
+    <p>
+      Kai'Sa was once a mortal who was swallowed by the Void. After years, she miraculously survived and returned. Wearing armor symbiotic with the Void, she moves swiftly and lethally. Though many fear her, she knows only she can resist the Void's corruption.
+    </p>
+  </section>
+
+  <!-- Abilities -->
+  <section class="section ability-video-section">
+    <h2>Abilities</h2>
+    <div class="ability-video-container">
+      <!-- Left: Ability List -->
+      <div class="abilities">
+        <div class="ability-card" data-video="videos/kaisa_passive.mp4">
+          <h3>Passive - Second Skin</h3>
+          <p>Her basic attacks apply Plasma, dealing bonus magic damage.</p>
+        </div>
+        <div class="ability-card" data-video="videos/kaisa_q.mp4">
+          <h3>Q - Icathian Rain</h3>
+          <p>Fires up to 12 missiles that evenly distribute among nearby enemies, dealing physical damage.</p>
+        </div>
+        <div class="ability-card" data-video="videos/kaisa_w.mp4">
+          <h3>W - Void Seeker</h3>
+          <p>Fires a long-range energy blast that deals magic damage and applies Plasma to the first enemy hit.</p>
+        </div>
+        <div class="ability-card" data-video="videos/kaisa_e.mp4">
+          <h3>E - Supercharge</h3>
+          <p>Briefly gains a burst of movement speed and then rapidly increases attack speed.</p>
+        </div>
+        <div class="ability-card" data-video="videos/kaisa_r.mp4">
+          <h3>R - Killer Instinct</h3>
+          <p>Dashes near an enemy champion and gains a shield.</p>
+        </div>
+      </div>
+
+      <!-- Right: Video Player -->
+      <div class="video-player">
+        <video id="abilityVideo" controls autoplay muted>
+          <source src="videos/kaisa_passive.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skins Carousel -->
+  <section class="skin-carousel-section">
+    <h2>Skin Showcase</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" id="prevBtn" aria-label="Previous Skin">&#10094;</button>
+      
+      <div class="carousel-track" id="carouselTrack">
+
+        <div class="carousel-slide">
+          <img src="images/kaisa_classic.jpg" alt="Classic Skin" />
+          <p>Classic Skin</p>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/kaisa_kda.jpg" alt="K/DA" />
+          <p>K/DA</p>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/kaisa_arcade.jpg" alt="Arcade" />
+          <p>Arcade</p>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/kaisa_bullet_angel.jpg" alt="Bullet Angel" />
+          <p>Bullet Angel</p>
+        </div>
+        
+        <div class="carousel-slide">
+          <img src="images/kaisa_kda_g.jpg" alt="PRESTIGE K/DA" />
+          <p>PRESTIGE K/DA</p>
+        </div>
+
+        <div class="carousel-slide">
+          <img src="images/kaisa_IG.jpg" alt="IG" />
+          <p>IG</p>
+        </div>
+      </div>
+      
+      <button class="carousel-btn right" id="nextBtn" aria-label="Next Skin">&#10095;</button>
+    </div>
+  </section>
+
+  <script src="script/kaisa.js"></script>
+
+</body>
+</html>

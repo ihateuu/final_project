@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahri - Summoner's Tome</title>
+  <link rel="stylesheet" href="style/ahri.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="site-title">Summoner's Tome</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="champions.html">Champions</a></li>
+        <li><a href="game_guides.html">Game Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="hero-banner" style="background-image: url('images/ahri-banner.jpg');">
+    <div class="hero-info">
+      <h1>Ahri</h1>
+      <p class="role">Nine-Tailed Fox — Mage / Assassin</p>
+      <p>Ahri is a vastaya who channels the essence of magic through her foxfire and charms. With an instinctive understanding of emotions, she manipulates her prey with ease and grace.</p>
+    </div>
+  </div>
+
+  <!-- Background Story -->
+  <section class="section">
+    <h2>Background Story</h2>
+    <p>
+      Born with a deep connection to the magic of Runeterra, Ahri is a vastaya who once lived among mortals. Though she has retained her humanity, her origin lies in ancient, mystical power. Struggling between her predatory instincts and her empathy, she seeks to uncover her past and master her arcane nature.
+    </p>
+  </section>
+
+  <!-- Abilities -->
+  <section class="section ability-video-section">
+    <h2>Abilities</h2>
+    <div class="ability-video-container">
+      <div class="abilities">
+        <div class="ability-card" data-video="videos/ahri_passive.mp4">
+          <h3>Passive - Essence Theft</h3>
+          <p>Ahri gains healing after hitting enemies with her abilities.</p>
+        </div>
+        <div class="ability-card" data-video="videos/ahri_q.mp4">
+          <h3>Q - Orb of Deception</h3>
+          <p>Ahri sends out and pulls back her orb, dealing magic and true damage.</p>
+        </div>
+        <div class="ability-card" data-video="videos/ahri_w.mp4">
+          <h3>W - Fox-Fire</h3>
+          <p>Releases three fox-fires that lock onto and attack nearby enemies.</p>
+        </div>
+        <div class="ability-card" data-video="videos/ahri_e.mp4">
+          <h3>E - Charm</h3>
+          <p>Blows a kiss that charms and damages the first enemy hit.</p>
+        </div>
+        <div class="ability-card" data-video="videos/ahri_r.mp4">
+          <h3>R - Spirit Rush</h3>
+          <p>Dashes forward and fires essence bolts, damaging up to three enemies.</p>
+        </div>
+      </div>
+
+      <div class="video-player">
+        <video id="abilityVideo" controls autoplay muted>
+          <source src="videos/ahri_passive.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skins Carousel -->
+  <section class="skin-carousel-section">
+    <h2>Skin Showcase</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" id="prevBtn">&#10094;</button>
+
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide">
+          <img src="images/ahri_classic.jpg" alt="Classic Skin" />
+          <p>Classic Skin</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ahri_kda.jpg" alt="K/DA Ahri" />
+          <p>K/DA</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ahri_popstar.jpg" alt="Popstar Ahri" />
+          <p>Popstar</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ahri_spirit_blossom.jpg" alt="Spirit Blossom Ahri" />
+          <p>Spirit Blossom</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ahri_arcana.jpg" alt="Arcana Ahri" />
+          <p>Arcana</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ahri_coven.jpg" alt="Coven Ahri" />
+          <p>Coven</p>
+        </div>
+      </div>
+
+      <button class="carousel-btn right" id="nextBtn">&#10095;</button>
+    </div>
+  </section>
+
+  <script src="script/ahri.js"></script> <!-- 你可以複製 kaisa.js 並命名為 ahri.js -->
+</body>
+</html>
