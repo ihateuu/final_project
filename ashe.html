@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashe - Summoner's Tome</title>
+  <link rel="stylesheet" href="style/KaiSa.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="site-title">Summoner's Tome</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="champions.html">Champions</a></li>
+        <li><a href="game_guides.html">Game Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="hero-banner" style="background-image: url('images/ashe-banner.jpg');">
+    <div class="hero-info">
+      <h1>Ashe</h1>
+      <p class="role">Frost Archer — Marksman / Utility</p>
+      <p>Iceborn and stoic, Ashe commands the tribes of the Freljord with precision and vision. With her enchanted bow, she slows and pierces foes, guiding her allies to victory through cold resolve.</p>
+    </div>
+  </div>
+
+  <!-- Background Story -->
+  <section class="section">
+    <h2>Background Story</h2>
+    <p>
+      Ashe is the war mother of the Avarosan tribe, one of the largest in the Freljord. Stoic, intelligent, and idealistic, she uses ancient, magical ice to wield a bow of True Ice and unify her people. Haunted by her mother’s death and the burden of leadership, Ashe fights to fulfill her mother’s dream of a united Freljord.
+    </p>
+  </section>
+
+  <!-- Abilities -->
+  <section class="section ability-video-section">
+    <h2>Abilities</h2>
+    <div class="ability-video-container">
+      <div class="abilities">
+        <div class="ability-card" data-video="videos/ashe_passive.mp4">
+          <h3>Passive - Frost Shot</h3>
+          <p>Ashe's attacks slow enemies, enhancing damage from her allies.</p>
+        </div>
+        <div class="ability-card" data-video="videos/ashe_q.mp4">
+          <h3>Q - Ranger's Focus</h3>
+          <p>Ashe builds up focus to unleash a flurry of arrows at her target.</p>
+        </div>
+        <div class="ability-card" data-video="videos/ashe_w.mp4">
+          <h3>W - Volley</h3>
+          <p>Fires a volley of arrows that slows and damages all enemies hit.</p>
+        </div>
+        <div class="ability-card" data-video="videos/ashe_e.mp4">
+          <h3>E - Hawkshot</h3>
+          <p>Sends a hawk spirit across the map to reveal terrain and enemies.</p>
+        </div>
+        <div class="ability-card" data-video="videos/ashe_r.mp4">
+          <h3>R - Enchanted Crystal Arrow</h3>
+          <p>Launches a giant arrow that stuns and damages the first enemy hit.</p>
+        </div>
+      </div>
+
+      <div class="video-player">
+        <video id="abilityVideo" controls autoplay muted>
+          <source src="videos/ashe_passive.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skins Carousel -->
+  <section class="skin-carousel-section">
+    <h2>Skin Showcase</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" id="prevBtn">&#10094;</button>
+
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide">
+          <img src="images/ashe_classic.jpg" alt="Classic Skin" />
+          <p>Classic Skin</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ashe_project.jpg" alt="PROJECT: Ashe" />
+          <p>PROJECT: Ashe</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ashe_fae.jpg" alt="Fae Dragon Ashe" />
+          <p>Fae Dragon</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ashe_cosmic.jpg" alt="Cosmic Queen Ashe" />
+          <p>Cosmic Queen</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ashe_highnoon.jpg" alt="High Noon Ashe" />
+          <p>High Noon</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/ashe_marauder.jpg" alt="Marauder Ashe" />
+          <p>Marauder</p>
+        </div>
+      </div>
+
+      <button class="carousel-btn right" id="nextBtn">&#10095;</button>
+    </div>
+  </section>
+
+  <script src="script/ashe.js"></script> 
+</body>
+</html>
